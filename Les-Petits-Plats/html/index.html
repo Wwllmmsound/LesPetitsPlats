@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@400;700&family=Roboto&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Les Petits Plats</title>
+</head>
+<body>
+    <header class="container col">
+        <a href="index.html"><img class="d-block mx-auto" src="../assets/logo.png" 
+            alt="logo les petits plats" /></a>
+        <nav class="navbar navbar-light bg-light py-2">          
+            <input id="nav-search" type="text" name="nav-search" class="form-control" 
+              placeholder="Rechercher une recette." aria-label="Search">
+            <span class="input-group-text" id="basic-addon1" title="search">
+                <i class="fas fa-search"></i>
+            </span>          
+        </nav>
+    </header>
+  
+    <main class="contenair col">
+        <section id="search" class="container row-3">
+            <div id="search-worlds" class="py-2"></div>
+                
+            <nav id="dropdown-buttons" class="container-fluid">
+                <div class="row">
+                    <div class="btn-group bg-primary me-3 mb-2">
+                        <div role="menu" class="btn btn-primary btn-lg" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <input class="dropdown-input btn btn-primary" name="ingredients" id="ingredients-input" type="text" placeholder="Ingrédients">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-primary"></ul>
+                    </div>
+  
+                    <div class="btn-group bg-success me-3 mb-2">
+                        <div role="menu" class="btn btn-success btn-lg" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <input class="dropdown-input btn btn-success" name="appareils" id="appareils-input" type="text" placeholder="Appareil">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-success"></ul>
+                    </div>
+  
+                    <div class="btn-group bg-danger me-3 mb-2">
+                        <div role="menu" class="btn btn-danger btn-lg" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <input class="dropdown-input btn btn-danger" name="ustensiles" id="ustensiles-input" type="text" placeholder="Ustensiles">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-danger"></ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+          
+        <section id="cards">
+            <div class="row row-cols-1 row-cols-md-3 g-4 gx-4">
+                <div class="vignette-recette">
+                    <div class="img-recette"></div>
+                    <div class="description-recette">
+                        <div class="titre-temps_recette">
+                            <h3 class="nom-recette">Nom de la recette</h3>
+                            <div class="temps-recette">
+                                <i class="fa-regular fa-clock"></i>
+                                <span class="duree-total">00 min</span>
+                            </div>
+                        </div>
+                        <div class="ingredient-details">
+                            <div class="ingredients">
+                                <ul>
+                                    <li>&</li>
+                                    <li>é</li>
+                                    <li>"</li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Illo modi excepturi tenetur esse sequi iure dicta doloribus 
+                                    magnam voluptas nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vignette-recette">
+                    <div class="img-recette"></div>
+                    <div class="description-recette">
+                        <div class="titre-temps_recette">
+                            <h3 class="nom-recette">Nom de la recette</h3>
+                            <div class="temps-recette">
+                                <i class="fa-regular fa-clock"></i>
+                                <span class="duree-total">00 min</span>
+                            </div>
+                        </div>
+                        <div class="ingredient-details">
+                            <div class="ingredients">
+                                <ul>
+                                    <li>&</li>
+                                    <li>é</li>
+                                    <li>"</li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Illo modi excepturi tenetur esse sequi iure dicta doloribus 
+                                    magnam voluptas nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
